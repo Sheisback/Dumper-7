@@ -34,6 +34,9 @@ DWORD MainThread(HMODULE Module)
 	auto t_1 = std::chrono::high_resolution_clock::now();
 
 	std::cout << "Started Generation [Dumper-7]!\n";
+	
+	//Sleep 10 seconds to make sure the game is loaded
+	Sleep(1000 * 10);
 
 	Generator::InitEngineCore();
 	Generator::InitInternal();

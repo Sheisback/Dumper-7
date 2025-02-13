@@ -68,6 +68,9 @@
     <ClCompile Include="DumpspaceGenerator.cpp">
       <Filter>GeneratorRewrite\Private\Generators</Filter>
     </ClCompile>
+    <ClCompile Include="dllproxy\proxy.cpp">
+      <Filter>dllproxy</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Engine">
@@ -123,6 +126,9 @@
     </Filter>
     <Filter Include="Utils\Encoding">
       <UniqueIdentifier>{6b25c48b-0bb2-4044-85fc-d02953c8f851}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="dllproxy">
+      <UniqueIdentifier>{61288d6c-3551-4aa2-bde9-106434ebe3a0}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -246,5 +252,15 @@
     <ClInclude Include="TestBase.h">
       <Filter>Tests</Filter>
     </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="dllproxy\version.def">
+      <Filter>dllproxy</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <MASM Include="dllproxy\version.asm">
+      <Filter>dllproxy</Filter>
+    </MASM>
   </ItemGroup>
 </Project>
